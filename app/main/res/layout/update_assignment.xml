@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_gravity="right"
+            android:backgroundTint="@color/carbon_red_500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fabSize="mini"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsbold"
+            android:paddingStart="10dp"
+            android:paddingTop="50dp"
+            android:paddingBottom="20dp"
+            android:text="View Assignment"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewWorkId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Work ID"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/textViewSubject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:paddingStart="10dp"
+                    android:text="Subject"
+
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/editSubject"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingStart="20dp"
+                    android:text="Subject Name..."
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:text="File Name"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/editWorkName"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingStart="20dp"
+                    android:text="Work Name..."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDateSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:paddingTop="20dp"
+                    android:paddingStart="10dp"
+                    android:text="Submit Date"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/editTextDate"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingStart="20dp"
+                    android:text="Due Date..."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textViewDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:text="Description"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/editTextDescription"
+                    android:layout_gravity="center"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingStart="20dp"
+                    android:text="Description..."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvFileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsbold"
+                    android:paddingStart="10dp"
+                    android:paddingTop="20dp"
+                    android:text="File"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/fileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="30dp"
+                    android:text="File path..."
+                    android:textSize="18sp" />
+
+
+                <Button
+                    android:id="@+id/buttonDownload"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_button"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Download"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <Button
+                    android:id="@+id/buttonDelete"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_button"
+                    android:fontFamily="@font/poppinsbold"
+                    android:text="Delete"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

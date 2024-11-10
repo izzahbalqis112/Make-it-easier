@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_background"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context=".activities.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Sign Up"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="26dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableEnd="@drawable/name_drawable"
+                android:ems="5"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/custom_input"
+                android:drawableEnd="@drawable/email"
+                android:ems="5"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:textSize="18sp" />
+
+
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableEnd="@drawable/phone_drawable"
+                android:ems="5"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Phone Number"
+                android:maxLength="12"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/editUserRole"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/spinner_background"
+                android:ems="5"
+                android:entries="@array/state_arrays"
+                android:hint="Student/Lecturer"
+                android:inputType="text"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+
+
+            <EditText
+                android:id="@+id/editPassword"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableEnd="@drawable/password"
+                android:ems="5"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editConfirmPassword"
+                android:layout_width="360dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:drawableEnd="@drawable/password"
+                android:ems="5"
+                android:fontFamily="@font/poppinsmedium"
+                android:hint="Confirm your password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:paddingTop="30dp"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSignUp"
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="57dp"
+                android:layout_height="48dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="409dp"
+                android:layout_height="41dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingTop="10dp"
+                android:text="Already have an account? Login here"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
