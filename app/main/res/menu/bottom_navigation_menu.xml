@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/subject"
+     android:enabled="true"
+     android:icon="@drawable/subject_navigation"
+     android:title="Subject"/>
+
+ <item android:id="@+id/home"
+     android:enabled="true"
+     android:icon="@drawable/home_navigation"
+     android:title="Home"/>
+
+ <item android:id="@+id/meeting"
+     android:enabled="true"
+     android:icon="@drawable/meeting_navigation"
+     android:title="Meeting Room"/>
+
+ <item android:id="@+id/profile"
+     android:enabled="true"
+     android:icon="@drawable/profile_navigation"
+     android:title="Profile"/>
+</menu>
